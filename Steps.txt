@@ -1,0 +1,16 @@
+#############################Get data From API################
+step1:Create service
+      ng g service services/service_name
+      >In service import HttpClient Class
+      >Inject HttpClient class in constructor
+      >Declare a function, call get() to get api and return this
+
+step2:In app.module.ts, Import HttpClientModule
+
+step3:For using this api data in component or showing this api data in component 
+     >Import service in that perticular component
+     >Inject in constructor
+     >Subscribe and store in a variable
+Now you can use in .html
+
+step4:in html show the data
